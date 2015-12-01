@@ -10,22 +10,15 @@ $font_path: "../fonts";
     unicode-range: U+0020-FB04;
 }
 
-
-@font-face{
-font-family:"ProximaNova-Regular";
-src:url($font_path+"/proxima-flat/proximanova-regular.eot");
-src:url($font_path+"/proxima-flat/proximanova-regular.eot?#iefix") format("embedded-opentype"),
-url($font_path+"/proxima-flat/proximanova-regular.woff") format("woff"),
-url($font_path+"/proxima-flat/proximanova-regular.ttf") format("truetype"),
-url($font_path+"/proxima-flat/proximanova-regular.otf") format("opentype"),
-url($font_path+"/proxima-flat/proximanova-regular.svg#ProximaNova-Regular") format("svg");
-font-weight:400;
-font-style:normal;
-font-stretch:normal;
-unicode-range:U+0020-FB04;
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url($font_path + "/proxima-flat/proximanova-regular.eot");
+    src: url($font_path + "/proxima-flat/proximanova-regular.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-regular.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-regular.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-regular.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-regular.svg#ProximaNova-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
 }
-
-
 
 @font-face {
     font-family: "ProximaNova-RegularIt";
@@ -37,7 +30,6 @@ unicode-range:U+0020-FB04;
     unicode-range: U+0020-FB04;
 }
 
-
 @font-face {
     font-family: "ProximaNova-Semibold";
     src: url($font_path + "/proxima-flat/proximanova-semibold.eot");
@@ -47,7 +39,6 @@ unicode-range:U+0020-FB04;
     font-stretch: normal;
     unicode-range: U+0020-FB04;
 }
-
 
 @font-face {
     font-family: "ProximaNova-SemiboldIt";
@@ -59,7 +50,6 @@ unicode-range:U+0020-FB04;
     unicode-range: U+0020-FB04;
 }
 
-
 @font-face {
     font-family: "ProximaNova-Black";
     src: url($font_path + "/proxima-flat/proximanova-black.eot");
@@ -69,7 +59,6 @@ unicode-range:U+0020-FB04;
     font-stretch: normal;
     unicode-range: U+0020-FB04;
 }
-
 
 @font-face {
     font-family: "ProximaNova-Bold";
@@ -81,7 +70,6 @@ unicode-range:U+0020-FB04;
     unicode-range: U+0020-FB04;
 }
 
-
 @font-face {
     font-family: "ProximaNova-BoldIt";
     src: url($font_path + "/proxima-flat/proximanova-boldit.eot");
@@ -91,7 +79,6 @@ unicode-range:U+0020-FB04;
     font-stretch: normal;
     unicode-range: U+0020-FB04;
 }
-
 
 @font-face {
     font-family: "ProximaNovaCond-Light";
@@ -103,7 +90,6 @@ unicode-range:U+0020-FB04;
     unicode-range: U+0020-FB04;
 }
 
-
 @font-face {
     font-family: "ProximaNovaCond-LightIt";
     src: url($font_path + "/proxima-flat/proximanovacond-lightit.eot");
@@ -113,7 +99,6 @@ unicode-range:U+0020-FB04;
     font-stretch: normal;
     unicode-range: U+0020-FB04;
 }
-
 
 @font-face {
     font-family: "ProximaNovaCond-Regular";
@@ -125,7 +110,6 @@ unicode-range:U+0020-FB04;
     unicode-range: U+0020-FB04;
 }
 
-
 @font-face {
     font-family: "ProximaNovaCond-RegularIt";
     src: url($font_path + "/proxima-flat/proximanovacond-regularit.eot");
@@ -135,7 +119,6 @@ unicode-range:U+0020-FB04;
     font-stretch: normal;
     unicode-range: U+0020-FB04;
 }
-
 
 @font-face {
     font-family: "ProximaNovaCond-Semibold";
@@ -147,7 +130,6 @@ unicode-range:U+0020-FB04;
     unicode-range: U+0020-FB04;
 }
 
-
 @font-face {
     font-family: "ProximaNova-Extrabld";
     src: url($font_path + "/proxima-flat/proximanova-extrabld.eot");
@@ -157,7 +139,6 @@ unicode-range:U+0020-FB04;
     font-stretch: normal;
     unicode-range: U+0020-FB04;
 }
-
 
 @font-face {
     font-family: "ProximaNova-Light";

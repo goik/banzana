@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+	
+/*
 	$("body").on("click","a",function(){
 		$('html,body').animate({scrollTop:0},300);
 	});
@@ -16,4 +17,6 @@ $(document).ready(function(){
 		  }
 		}
 	});
+*/
+
  });
