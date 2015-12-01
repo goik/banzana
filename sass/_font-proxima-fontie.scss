@@ -1,0 +1,225 @@
+$font_path:"../../fonts";
+@font-face{
+font-family:"ProximaNova-LightIt";
+src:url($font_path+"/proxima-fontie/ProximaNova-LightIt_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-LightIt_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-LightIt_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-LightIt_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-LightIt_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-LightIt_gdi.svg#ProximaNova-LightIt") format("svg");
+font-weight:300;
+font-style:italic;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNova-Regular";
+src:url($font_path+"/proxima-fontie/ProximaNova-Regular_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-Regular_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Regular_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-Regular_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-Regular_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Regular_gdi.svg#ProximaNova-Regular") format("svg");
+font-weight:400;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNova-RegularIt";
+src:url($font_path+"/proxima-fontie/ProximaNova-RegularIt_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-RegularIt_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-RegularIt_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-RegularIt_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-RegularIt_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-RegularIt_gdi.svg#ProximaNova-RegularIt") format("svg");
+font-weight:400;
+font-style:italic;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+/*@font-face{
+font-family:"ProximaNova-Semibold";
+src:url($font_path+"/proxima-fontie/ProximaNova-Semibold_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-Semibold_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Semibold_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-Semibold_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-Semibold_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Semibold_gdi.svg#ProximaNova-Semibold") format("svg");
+font-weight:600;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}*/
+
+@font-face{
+font-family:"ProximaNova-Semibold";
+src:url($font_path+"/proxima-fontie/proximanova-semibold.eot");
+src:url($font_path+"/proxima-fontie/proximanova-semibold.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/proximanova-semibold.woff") format("woff"),
+url($font_path+"/proxima-fontie/proximanova-semibold.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/proximanova-semibold.otf") format("opentype"),
+url($font_path+"/proxima-fontie/proximanova-semibold.svg#ProximaNova-Semibold") format("svg");
+font-weight:600;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+
+@font-face{
+font-family:"ProximaNova-SemiboldIt";
+src:url($font_path+"/proxima-fontie/ProximaNova-SemiboldIt_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-SemiboldIt_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-SemiboldIt_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-SemiboldIt_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-SemiboldIt_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-SemiboldIt_gdi.svg#ProximaNova-SemiboldIt") format("svg");
+font-weight:600;
+font-style:italic;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNova-Black";
+src:url($font_path+"/proxima-fontie/ProximaNova-Black_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-Black_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Black_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-Black_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-Black_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Black_gdi.svg#ProximaNova-Black") format("svg");
+font-weight:900;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNova-Bold";
+src:url($font_path+"/proxima-fontie/ProximaNova-Bold_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-Bold_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Bold_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-Bold_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-Bold_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Bold_gdi.svg#ProximaNova-Bold") format("svg");
+font-weight:700;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNova-BoldIt";
+src:url($font_path+"/proxima-fontie/ProximaNova-BoldIt_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-BoldIt_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-BoldIt_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-BoldIt_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-BoldIt_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-BoldIt_gdi.svg#ProximaNova-BoldIt") format("svg");
+font-weight:700;
+font-style:italic;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNovaCond-Light";
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-Light_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-Light_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Light_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Light_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Light_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Light_gdi.svg#ProximaNovaCond-Light") format("svg");
+font-weight:300;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNovaCond-LightIt";
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-LightIt_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-LightIt_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-LightIt_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-LightIt_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-LightIt_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-LightIt_gdi.svg#ProximaNovaCond-LightIt") format("svg");
+font-weight:300;
+font-style:italic;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNovaCond-Regular";
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-Regular_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-Regular_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Regular_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Regular_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Regular_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Regular_gdi.svg#ProximaNovaCond-Regular") format("svg");
+font-weight:400;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNovaCond-RegularIt";
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-RegularIt_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-RegularIt_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-RegularIt_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-RegularIt_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-RegularIt_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-RegularIt_gdi.svg#ProximaNovaCond-RegularIt") format("svg");
+font-weight:400;
+font-style:italic;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNovaCond-Semibold";
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-Semibold_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNovaCond-Semibold_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Semibold_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Semibold_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Semibold_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNovaCond-Semibold_gdi.svg#ProximaNovaCond-Semibold") format("svg");
+font-weight:600;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNova-Extrabld";
+src:url($font_path+"/proxima-fontie/ProximaNova-Extrabld_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-Extrabld_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Extrabld_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-Extrabld_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-Extrabld_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Extrabld_gdi.svg#ProximaNova-Extrabld") format("svg");
+font-weight:800;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}
+
+@font-face{
+font-family:"ProximaNova-Light";
+src:url($font_path+"/proxima-fontie/ProximaNova-Light_gdi.eot");
+src:url($font_path+"/proxima-fontie/ProximaNova-Light_gdi.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Light_gdi.woff") format("woff"),
+url($font_path+"/proxima-fontie/ProximaNova-Light_gdi.ttf") format("truetype"),
+url($font_path+"/proxima-fontie/ProximaNova-Light_gdi.otf") format("opentype"),
+url($font_path+"/proxima-fontie/ProximaNova-Light_gdi.svg#ProximaNova-Light") format("svg");
+font-weight:300;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}

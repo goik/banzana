@@ -1,0 +1,235 @@
+$mainCrcassBgColor: #e3e3e3;
+$iconColor: #1f94ee;
+$normalFontSize: 13px;
+$txtColorCountryBlock: #727272;
+$inputColor: #727272;
+$menuItemFontSize: 15px;
+$defaultTextColor: #272727;
+$hover: #1f95ef;
+$secondColor: #1f95ef;
+$darkBG: #1c1c1c;
+$darkColor: #1c1c1c;
+$darkTxtColor: #1c1c1c;
+$bottomHeaderLink: ("normal": $darkBG, "hover": $hover);
+$topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
+
+//======  MIXINS  =======//
+@mixin placeholder($color, $size: "") {
+    &::-webkit-input-placeholder {
+        color: $color;
+        @if $size != "" {
+            font-size: $size;
+        }
+    }
+    &:-moz-placeholder {
+        color: $color;
+        @if $size != "" {
+            font-size: $size;
+        }
+    }
+    &::-moz-placeholder {
+        color: $color;
+        @if $size != "" {
+            font-size: $size;
+        }
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+        @if $size != "" {
+            font-size: $size;
+        }
+    }
+}
+
+@mixin hHack($height) {
+    min-height: $height;
+    height: auto !important;
+    height: $height;
+}
+
+@mixin transition($dur, $ease) {
+    transition: all $dur $ease;
+    -webkit-transition: all $dur $ease;
+    -moz-transition: all $dur $ease;
+    -o-transition: all $dur $ease;
+    -ms-transition: all $dur $ease;
+}
+
+@mixin borderRadius($corner) {
+    border-radius: $corner;
+    -o-border-radius: $corner;
+    -khtml-border-radius: $corner;
+    -moz-border-radius: $corner;
+    -webkit-border-radius: $corner;
+    -ms-border-radius: $corner;
+}
+
+@mixin opacity($alpha) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $alpha * 100 + ")";
+    filter: alpha(opacity = $alpha * 100);
+    -moz-opacity: $alpha;
+    opacity: $alpha;
+}
+
+@mixin backgroundSize($w, $h) {
+    -webkit-background-size: $w $h;
+    -moz-background-size: $w $h;
+    -o-background-size: $w $h;
+    -ms-background-size: $w $h;
+    background-size: $w $h;
+}
+
+@mixin scale($rank) {
+    -moz-transform: scale($rank);
+    -o-transform: scale($rank);
+    -webkit-transform: scale($rank);
+    transform: scale($rank);
+    -ms-transform: scale($rank);
+}
+
+//======  END MIXINS  =======//
+@import "jquery.mCustomScrollbar.min";
+@import "owl.carousel";
+@import "owl.theme";
+@import "owl.transitions";
+@import "select-theme-dark";
+@import "base";
+@import "scroll-style";
+
+/*
+@import "f-variables";
+@import "f-mixins";
+@import "f-path";
+@import "f-core";
+@import "f-larger";
+@import "f-fixed-width";
+@import "f-list";
+@import "f-bordered-pulled";
+@import "f-animated";
+@import "f-rotated-flipped";
+@import "f-stacked";
+@import "f-icons";
+*/
+@import "font-proxima-flat";
+@import "media-query";
+
+.indent {
+    display: block;
+    font-size: 0;
+    text-decoration: none;
+    text-indent: -999999px;
+    text-align: left;
+}
+
+body,
+html {
+    background: #fff;
+    border: 0 none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: $defaultTextColor;
+    @extend %regular;
+    cursor: default;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+//~~~~~EXTEND ~~~~~//
+%synopsis-titles {
+    color: #1c1c1c;
+    font-size: 16px;
+    text-transform: uppercase;
+    @extend %semibold;
+}
+
+%current_nav_menu {
+    color: $hover;
+    border-bottom: solid $hover 2px;
+}
+
+%transition {
+    transition: all 0.3s, ease-in-out;
+    -webkit-transition: all 0.3s, ease-in-out;
+    -moz-transition: all 0.3s, ease-in-out;
+    -o-transition: all 0.3s, ease-in-out;
+    -ms-transition: all 0.3s, ease-in-out;
+}
+
+%regular {
+    font-family: ProximaNova-Regular, sans-serif;
+}
+
+%semibold {
+    font-family: ProximaNova-Semibold, sans-serif;
+}
+
+%bold {
+    font-family: ProximaNova-Bold, sans-serif;
+}
+
+%listReset {
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+%ac {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    text-decoration: none;
+    text-indent: -999999px;
+    visibility: hidden;
+    text-align: left;
+    border: 0;
+    width: 100%;
+}
+
+%gWidth {
+    max-width: 1330px;
+    min-width: 900px;
+    margin: 0 auto;
+    @include hHack(10px);
+    clear: both;
+    &:after {
+        @extend %ac;
+    }
+}
+
+%relat {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+%unlockElementStyle {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -icab-appearance: none;
+    -khtml-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {}
+
+//~~~~~/EXTEND  ~~~~~//
+
+a {
+    color: #fff;
+}

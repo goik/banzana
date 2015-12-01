@@ -1,0 +1,179 @@
+$font_path: "../../fonts";
+
+@font-face {
+    font-family: "ProximaNova-LightIt";
+    src: url($font_path + "/proxima-flat/proximanova-lightit.eot");
+    src: url($font_path + "/proxima-flat/proximanova-lightit.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-lightit.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-lightit.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-lightit.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-lightit.svg#ProximaNova-LightIt") format("svg");
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+/*@font-face{
+font-family:"ProximaNova-Regular";
+src:url($font_path+"/proxima-flat/proximanova-regular.eot");
+src:url($font_path+"/proxima-flat/proximanova-regular.eot?#iefix") format("embedded-opentype"),
+url($font_path+"/proxima-flat/proximanova-regular.woff") format("woff"),
+url($font_path+"/proxima-flat/proximanova-regular.ttf") format("truetype"),
+url($font_path+"/proxima-flat/proximanova-regular.otf") format("opentype"),
+url($font_path+"/proxima-flat/proximanova-regular.svg#ProximaNova-Regular") format("svg");
+font-weight:400;
+font-style:normal;
+font-stretch:normal;
+unicode-range:U+0020-FB04;
+}*/
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.eot");
+    src: url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.woff") format("woff"), url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.ttf") format("truetype"), url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.otf") format("opentype"), url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.svg#ProximaNova-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNova-RegularIt";
+    src: url($font_path + "/proxima-flat/proximanova-regularit.eot");
+    src: url($font_path + "/proxima-flat/proximanova-regularit.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-regularit.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-regularit.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-regularit.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-regularit.svg#ProximaNova-RegularIt") format("svg");
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url($font_path + "/proxima-flat/proximanova-semibold.eot");
+    src: url($font_path + "/proxima-flat/proximanova-semibold.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-semibold.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-semibold.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-semibold.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-semibold.svg#ProximaNova-Semibold") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNova-SemiboldIt";
+    src: url($font_path + "/proxima-flat/proximanova-semiboldit.eot");
+    src: url($font_path + "/proxima-flat/proximanova-semiboldit.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-semiboldit.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-semiboldit.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-semiboldit.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-semiboldit.svg#ProximaNova-SemiboldIt") format("svg");
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNova-Black";
+    src: url($font_path + "/proxima-flat/proximanova-black.eot");
+    src: url($font_path + "/proxima-flat/proximanova-black.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-black.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-black.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-black.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-black.svg#ProximaNova-Black") format("svg");
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNova-Bold";
+    src: url($font_path + "/proxima-flat/proximanova-bold.eot");
+    src: url($font_path + "/proxima-flat/proximanova-bold.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-bold.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-bold.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-bold.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-bold.svg#ProximaNova-Bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNova-BoldIt";
+    src: url($font_path + "/proxima-flat/proximanova-boldit.eot");
+    src: url($font_path + "/proxima-flat/proximanova-boldit.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-boldit.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-boldit.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-boldit.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-boldit.svg#ProximaNova-BoldIt") format("svg");
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNovaCond-Light";
+    src: url($font_path + "/proxima-flat/proximanovacond-light.eot");
+    src: url($font_path + "/proxima-flat/proximanovacond-light.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanovacond-light.woff") format("woff"), url($font_path + "/proxima-flat/proximanovacond-light.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanovacond-light.otf") format("opentype"), url($font_path + "/proxima-flat/proximanovacond-light.svg#ProximaNovaCond-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNovaCond-LightIt";
+    src: url($font_path + "/proxima-flat/proximanovacond-lightit.eot");
+    src: url($font_path + "/proxima-flat/proximanovacond-lightit.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanovacond-lightit.woff") format("woff"), url($font_path + "/proxima-flat/proximanovacond-lightit.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanovacond-lightit.otf") format("opentype"), url($font_path + "/proxima-flat/proximanovacond-lightit.svg#ProximaNovaCond-LightIt") format("svg");
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNovaCond-Regular";
+    src: url($font_path + "/proxima-flat/proximanovacond-regular.eot");
+    src: url($font_path + "/proxima-flat/proximanovacond-regular.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanovacond-regular.woff") format("woff"), url($font_path + "/proxima-flat/proximanovacond-regular.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanovacond-regular.otf") format("opentype"), url($font_path + "/proxima-flat/proximanovacond-regular.svg#ProximaNovaCond-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNovaCond-RegularIt";
+    src: url($font_path + "/proxima-flat/proximanovacond-regularit.eot");
+    src: url($font_path + "/proxima-flat/proximanovacond-regularit.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanovacond-regularit.woff") format("woff"), url($font_path + "/proxima-flat/proximanovacond-regularit.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanovacond-regularit.otf") format("opentype"), url($font_path + "/proxima-flat/proximanovacond-regularit.svg#ProximaNovaCond-RegularIt") format("svg");
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNovaCond-Semibold";
+    src: url($font_path + "/proxima-flat/proximanovacond-semibold.eot");
+    src: url($font_path + "/proxima-flat/proximanovacond-semibold.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanovacond-semibold.woff") format("woff"), url($font_path + "/proxima-flat/proximanovacond-semibold.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanovacond-semibold.otf") format("opentype"), url($font_path + "/proxima-flat/proximanovacond-semibold.svg#ProximaNovaCond-Semibold") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNova-Extrabld";
+    src: url($font_path + "/proxima-flat/proximanova-extrabld.eot");
+    src: url($font_path + "/proxima-flat/proximanova-extrabld.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-extrabld.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-extrabld.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-extrabld.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-extrabld.svg#ProximaNova-Extrabld") format("svg");
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}
+
+
+@font-face {
+    font-family: "ProximaNova-Light";
+    src: url($font_path + "/proxima-flat/proximanova-light.eot");
+    src: url($font_path + "/proxima-flat/proximanova-light.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-flat/proximanova-light.woff") format("woff"), url($font_path + "/proxima-flat/proximanova-light.ttf") format("truetype"), url($font_path + "/proxima-flat/proximanova-light.otf") format("opentype"), url($font_path + "/proxima-flat/proximanova-light.svg#ProximaNova-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB04;
+}

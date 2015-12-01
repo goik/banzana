@@ -1,0 +1,177 @@
+$path:"../../fonts/proxima/";
+
+@font-face{ 
+	font-family:"ProximaNova-Extrabld";
+	src:url($path+"ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-Extrabld.otf") format("opentype"),
+	url($path+"ProximaNova-Extrabld.woff") format("woff"),
+	url($path+"ProximaNova-Extrabld.ttf") format("truetype"),
+	url($path+"ProximaNova-Extrabld.svg#ProximaNova-Extrabld") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-Light";
+	src:url($path+"ProximaNova-Light.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-Light.otf") format("opentype"),
+	url($path+"ProximaNova-Light.woff") format("woff"),
+	url($path+"ProximaNova-Light.ttf") format("truetype"),
+	url($path+"ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-LightIt";
+	src:url($path+"ProximaNova-LightIt.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-LightIt.otf") format("opentype"),
+	url($path+"ProximaNova-LightIt.woff") format("woff"),
+	url($path+"ProximaNova-LightIt.ttf") format("truetype"),
+	url($path+"ProximaNova-LightIt.svg#ProximaNova-LightIt") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-Regular";
+	src:url($path+"ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-Regular.otf") format("opentype"),
+	url($path+"ProximaNova-Regular.woff") format("woff"),
+	url($path+"ProximaNova-Regular.ttf") format("truetype"),
+	url($path+"ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-RegularIt";
+	src:url($path+"ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-RegularIt.otf") format("opentype"),
+	url($path+"ProximaNova-RegularIt.woff") format("woff"),
+	url($path+"ProximaNova-RegularIt.ttf") format("truetype"),
+	url($path+"ProximaNova-RegularIt.svg#ProximaNova-RegularIt") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNovaCond-SemiboldIt";
+	src:url($path+"ProximaNovaCond-SemiboldIt.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNovaCond-SemiboldIt.otf") format("opentype"),
+	url($path+"ProximaNovaCond-SemiboldIt.woff") format("woff"),
+	url($path+"ProximaNovaCond-SemiboldIt.ttf") format("truetype"),
+	url($path+"ProximaNovaCond-SemiboldIt.svg#ProximaNovaCond-SemiboldIt") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNovaCond-Semibold";
+	src:url($path+"ProximaNovaCond-Semibold.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNovaCond-Semibold.otf") format("opentype"),
+	url($path+"ProximaNovaCond-Semibold.woff") format("woff"),
+	url($path+"ProximaNovaCond-Semibold.ttf") format("truetype"),
+	url($path+"ProximaNovaCond-Semibold.svg#ProximaNovaCond-Semibold") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNovaCond-RegularIt";
+	src:url($path+"ProximaNovaCond-RegularIt.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNovaCond-RegularIt.otf") format("opentype"),
+	url($path+"ProximaNovaCond-RegularIt.woff") format("woff"),
+	url($path+"ProximaNovaCond-RegularIt.ttf") format("truetype"),
+	url($path+"ProximaNovaCond-RegularIt.svg#ProximaNovaCond-RegularIt") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNovaCond-Regular";
+	src:url($path+"ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNovaCond-Regular.otf") format("opentype"),
+	url($path+"ProximaNovaCond-Regular.woff") format("woff"),
+	url($path+"ProximaNovaCond-Regular.ttf") format("truetype"),
+	url($path+"ProximaNovaCond-Regular.svg#ProximaNovaCond-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNovaCond-LightIt";
+	src:url($path+"ProximaNovaCond-LightIt.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNovaCond-LightIt.otf") format("opentype"),
+	url($path+"ProximaNovaCond-LightIt.woff") format("woff"),
+	url($path+"ProximaNovaCond-LightIt.ttf") format("truetype"),
+	url($path+"ProximaNovaCond-LightIt.svg#ProximaNovaCond-LightIt") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNovaCond-Light";
+	src:url($path+"ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNovaCond-Light.otf") format("opentype"),
+	url($path+"ProximaNovaCond-Light.woff") format("woff"),
+	url($path+"ProximaNovaCond-Light.ttf") format("truetype"),
+	url($path+"ProximaNovaCond-Light.svg#ProximaNovaCond-Light") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-BoldIt";
+	src:url($path+"ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-BoldIt.otf") format("opentype"),
+	url($path+"ProximaNova-BoldIt.woff") format("woff"),
+	url($path+"ProximaNova-BoldIt.ttf") format("truetype"),
+	url($path+"ProximaNova-BoldIt.svg#ProximaNova-BoldIt") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-Black";
+	src:url($path+"ProximaNova-Black.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-Black.otf") format("opentype"),
+	url($path+"ProximaNova-Black.woff") format("woff"),
+	url($path+"ProximaNova-Black.ttf") format("truetype"),
+	url($path+"ProximaNova-Black.svg#ProximaNova-Black") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-Bold";
+	src:url($path+"ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-Bold.otf") format("opentype"),
+	url($path+"ProximaNova-Bold.woff") format("woff"),
+	url($path+"ProximaNova-Bold.ttf") format("truetype"),
+	url($path+"ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-SemiboldIt";
+	src:url($path+"ProximaNova-SemiboldIt.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-SemiboldIt.otf") format("opentype"),
+	url($path+"ProximaNova-SemiboldIt.woff") format("woff"),
+	url($path+"ProximaNova-SemiboldIt.ttf") format("truetype"),
+	url($path+"ProximaNova-SemiboldIt.svg#ProximaNova-SemiboldIt") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:"ProximaNova-Semibold";
+	src:url($path+"ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"),
+	url($path+"ProximaNova-Semibold.otf") format("opentype"),
+	url($path+"ProximaNova-Semibold.woff") format("woff"),
+	url($path+"ProximaNova-Semibold.ttf") format("truetype"),
+	url($path+"ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
