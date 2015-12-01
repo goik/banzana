@@ -195,6 +195,8 @@ $topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {}
 
+
+
 //~~~~~/EXTEND  ~~~~~//
 
 
@@ -208,9 +210,10 @@ $topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
     text-align: left;
 }
 
+
 body,
 html {
-    background: #fff;
+    background: #fff; 
     border: 0 none;
     font-size: 0;
     margin: 0;
@@ -232,3 +235,7 @@ html {
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
 } 
+
+
+a{color:#ff0000;}
+

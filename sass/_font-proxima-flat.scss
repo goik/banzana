@@ -1,4 +1,4 @@
-$font_path: "../../fonts";
+$font_path: "../fonts";
 
 @font-face {
     font-family: "ProximaNova-LightIt";
@@ -11,7 +11,7 @@ $font_path: "../../fonts";
 }
 
 
-/*@font-face{
+@font-face{
 font-family:"ProximaNova-Regular";
 src:url($font_path+"/proxima-flat/proximanova-regular.eot");
 src:url($font_path+"/proxima-flat/proximanova-regular.eot?#iefix") format("embedded-opentype"),
@@ -23,17 +23,8 @@ font-weight:400;
 font-style:normal;
 font-stretch:normal;
 unicode-range:U+0020-FB04;
-}*/
-
-@font-face {
-    font-family: "ProximaNova-Regular";
-    src: url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.eot");
-    src: url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.eot?#iefix") format("embedded-opentype"), url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.woff") format("woff"), url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.ttf") format("truetype"), url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.otf") format("opentype"), url($font_path + "/proxima-fontie/ProximaNova-Regular_gdi.svg#ProximaNova-Regular") format("svg");
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-FB04;
 }
+
 
 
 @font-face {
