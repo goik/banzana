@@ -11,6 +11,9 @@
     "gulp-minify-html": "~1.0.4",
     "gulp-notify": "~2.2.0",
     "gulp-rename": "~1.2.2",
-    "gulp-jsmin": "~0.1.5"
+    "gulp-jsmin": "~0.1.5",
+    "gulp-mini-css": "0.0.3",
+    "gulp-ruby-sass": "~2.0.6",
+    "gulp-sass": "~2.1.0"
   }
 }
