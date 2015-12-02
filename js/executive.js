@@ -19,4 +19,27 @@ $(document).ready(function(){
 	});
 */
 
+   // target blank on link
+    $(".tb").each(function() {
+        $(this).attr("target", "_blank");
+    });
+
+    // hide visible tag alt & title
+    var getAlt = "",
+        getTitle = "";
+    $("body").on("mouseenter", ".hta", function() {
+        tag = $(this);
+        getAlt = tag.attr("alt");
+        getTitle = tag.attr("title");
+        tag.attr("alt", "");
+        tag.attr("title", "");
+    });
+
+    $("body").on("mouseleave", ".hta", function() {
+        tag = $(this);
+        tag.attr("alt", getAlt);
+        tag.attr("title", getTitle);
+    });
+
+
  });
