@@ -1,41 +1,90 @@
-$mainCrcassBgColor: #e3e3e3;
-$iconColor: #1f94ee;
-$normalFontSize: 13px;
-$txtColorCountryBlock: #727272;
-$inputColor: #727272;
-$menuItemFontSize: 15px;
-$defaultTextColor: #272727;
-$hover: #1f95ef;
-$secondColor: #1f95ef;
-$darkBG: #1c1c1c;
-$darkColor: #1c1c1c;
-$darkTxtColor: #1c1c1c;
-$bottomHeaderLink: ("normal": $darkBG, "hover": $hover);
-$topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
+$hover:#be1e2d;
+$carcassWidth:1440px;
+$carcassMinWidth:200px;
+//$bgColor:#4b0108;
+$bgColor:#000;
 
+/*==================*/
+
+$bodyTopDecorationLayer:#00aeee;
+$bodyTopDecorationLayerHeight:285px;
+$mainPlatformBg:#ffffff;
+$opacityLayerBg:rgba(255, 255, 255, 0.37);
+$mainPadding:0 40px;
+$mainPaddingResize:0 20px;
+$mainPaddingLastResize:0 10px;
+$mainInnerPadding:0 80px;
+$mainInnerPaddingResize:0 20px;
+$mainInnerPaddingLastResize:0 3px;
+$footerHeight:184px;
+$footerTopLine:#dee1dd;
+$linkHover:#ee9206;
+$linkNormal:#777;
+$copyRightTextColor:#444;
+$footerMenuLinkHover:#fab149;
+$footerIconsColor:#fff;
+$facebookColor:#355e9f;
+$facebookColorHover:#194181;
+$twitterColor:#29a9e0;
+$twitterColorHover:#058bc5;
+$googleColor:#db5341;
+$youtubeColor:#ed3336;
+$youtubeColorHover:#a00a0c;
+$footerIconsFontSize:20px;
+$langLinkColor:#000;
+$langFontSize:10px;
+$langLinkColorHover:#ed397f;
+$langSpacerColor:#dee1dd;
+$mainTitleColor:#656565;
+$mainTitleFontSize:22px;
+$lineColor:#dee1dd;
+$lineColorFillType1:#fab149;
+$grayTxtColor:#6d6d6d;
+$tabTextColor:#6d6d6d;
+$tabTextFontSize:14px;
+$tabBg:#e5e5e6;
+$tabBgCurrent:#fafcfd;
+$tabBorderCurrent:#ebebeb;
+$tabContentHeight:325px;
+$stepWidth:160px;
+$captchaWidth:150px;
+$accountListLeftWidth:189px;
+$regBtnColor:#fab149;
+$regBtnBorderColor:#ef9917;
+$topHeaderLink:( "normal":#a8a8a8, "hover":$hover);
+$bottomHeaderLink:( "normal":#1c1c1c, "hover":$hover);
+$bannerLeftColor:#dcf1e8;
+$bannerRightColor:#e27848;
+@import "base";
+@import "owl.carousel";
+@import "owl.theme";
+@import "owl.transitions";
+@import "select-theme-dark";
+@import "font-proxima-flat";
+@import "media-query";
 //======  MIXINS  =======//
 @mixin placeholder($color, $size: "") {
     &::-webkit-input-placeholder {
         color: $color;
-        @if $size != "" {
+        @if $size !="" {
             font-size: $size;
         }
     }
     &:-moz-placeholder {
         color: $color;
-        @if $size != "" {
+        @if $size !="" {
             font-size: $size;
         }
     }
     &::-moz-placeholder {
         color: $color;
-        @if $size != "" {
+        @if $size !="" {
             font-size: $size;
         }
     }
     &:-ms-input-placeholder {
         color: $color;
-        @if $size != "" {
+        @if $size !="" {
             font-size: $size;
         }
     }
@@ -43,114 +92,122 @@ $topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
 
 @mixin hHack($height) {
     min-height: $height;
-    height: auto !important;
+    height: auto!important;
     height: $height;
 }
 
 @mixin transition($dur, $ease) {
-    transition: all $dur $ease;
     -webkit-transition: all $dur $ease;
+    -icab-transition: all $dur $ease;
+    -khtml-transition: all $dur $ease;
     -moz-transition: all $dur $ease;
     -o-transition: all $dur $ease;
     -ms-transition: all $dur $ease;
+    transition: all $dur $ease;
 }
 
 @mixin borderRadius($corner) {
-    border-radius: $corner;
     -o-border-radius: $corner;
     -khtml-border-radius: $corner;
+    -icab-border-radius: $corner;
     -moz-border-radius: $corner;
     -webkit-border-radius: $corner;
     -ms-border-radius: $corner;
+    border-radius: $corner;
 }
 
 @mixin opacity($alpha) {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $alpha * 100 + ")";
-    filter: alpha(opacity = $alpha * 100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$alpha*100+")";
+    filter: alpha(opacity=$alpha*100);
     -moz-opacity: $alpha;
-    opacity: $alpha;
+    opacity: $alpha
 }
 
 @mixin backgroundSize($w, $h) {
     -webkit-background-size: $w $h;
+    -icab-background-size: $w $h;
+    -khtml-background-size: $w $h;
     -moz-background-size: $w $h;
     -o-background-size: $w $h;
     -ms-background-size: $w $h;
-    background-size: $w $h;
+    background-size: $w $h
 }
 
 @mixin scale($rank) {
     -moz-transform: scale($rank);
     -o-transform: scale($rank);
     -webkit-transform: scale($rank);
-    transform: scale($rank);
     -ms-transform: scale($rank);
+    -khtml-transform: scale($rank);
+    -icab-transform: scale($rank);
+    transform: scale($rank);
 }
 
-//======  END MIXINS  =======//
-@import "jquery.mCustomScrollbar.min";
-@import "owl.carousel";
-@import "owl.theme";
-@import "owl.transitions";
-@import "select-theme-dark";
-@import "base";
-@import "scroll-style";
-/*
-@import "f-variables";
-@import "f-mixins";
-@import "f-path";
-@import "f-core";
-@import "f-larger";
-@import "f-fixed-width";
-@import "f-list";
-@import "f-bordered-pulled";
-@import "f-animated";
-@import "f-rotated-flipped";
-@import "f-stacked";
-@import "f-icons";
-*/
-@import "font-proxima-flat";
-@import "media-query";
-
-
+//====== /MIXINS =======//
 //~~~~~EXTEND ~~~~~//
-%synopsis-titles {
-    color: #1c1c1c;
-    font-size: 16px;
-    text-transform: uppercase;
-    @extend %semibold;
+%verticalCenter {
+    left: 0;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -icab-transform: translate(0, -50%);
+    -khtml-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
 
-%current_nav_menu {
-    color: $hover;
-    border-bottom: solid $hover 2px;
+%center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -icab-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-%transition {
-    transition: all 0.3s, ease-in-out;
+%transitionExt {
     -webkit-transition: all 0.3s, ease-in-out;
+    -icab-transition: all 0.3s, ease-in-out;
+    -khtml-transition: all 0.3s, ease-in-out;
     -moz-transition: all 0.3s, ease-in-out;
     -o-transition: all 0.3s, ease-in-out;
     -ms-transition: all 0.3s, ease-in-out;
+    transition: all 0.3s, ease-in-out;
 }
 
-%regular {
-    font-family: ProximaNova-Regular, sans-serif;
-}
-
-%semibold {
-    font-family: ProximaNova-Semibold, sans-serif;
+%transitionExt2 {
+    -webkit-transition: all 0.2s, ease-in-out;
+    -icab-transition: all 0.2s, ease-in-out;
+    -khtml-transition: all 0.2s, ease-in-out;
+    -moz-transition: all 0.2s, ease-in-out;
+    -o-transition: all 0.2s, ease-in-out;
+    -ms-transition: all 0.2s, ease-in-out;
+    transition: all 0.2s, ease-in-out;
 }
 
 %bold {
-    font-family: ProximaNova-Bold, sans-serif;
+    font-family: ProximaNova-Bold, sans-serif
+}
+
+%regular {
+    font-family: ProximaNova-Regular, sans-serif
+}
+
+%semibold {
+    font-family: ProximaNova-Semibold, sans-serif
 }
 
 %listReset {
     list-style: none;
     font-size: 0;
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 %ac {
@@ -167,11 +224,20 @@ $topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
 }
 
 %gWidth {
-    max-width: 1330px;
-    min-width: 900px;
+    max-width: $carcassWidth;
+    min-width: $carcassMinWidth;
     margin: 0 auto;
-    @include hHack(10px);
     clear: both;
+    display: block;
+    &:after {
+        @extend %ac
+    }
+}
+
+%cb {
+    clear: both;
+    display: block;
+    @extend %relat;
     &:after {
         @extend %ac;
     }
@@ -180,7 +246,7 @@ $topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
 %relat {
     position: relative;
     top: 0;
-    left: 0;
+    left: 0
 }
 
 %unlockElementStyle {
@@ -190,17 +256,87 @@ $topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
     -icab-appearance: none;
     -khtml-appearance: none;
     -ms-appearance: none;
-    -o-appearance: none;
+    -o-appearance: none
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {}
+//~~~~~/EXTEND ~~~~~//
+scrollbar {
+    width: 6px;
+    height: 6px
+}
 
+scrollbar-track {
+    background-color: transparent;
+    border-left: 1px solid transparent
+}
 
+scrollbar-thumb {
+    background-color: $hover;
+    border-radius: 0px
+}
 
-//~~~~~/EXTEND  ~~~~~//
+scrollbar-thumb:hover {
+    background-color: transparent
+}
 
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px
+}
 
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-left: 1px solid transparent
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: $hover;
+    border-radius: 0px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $hover
+}
+
+body,
+html {
+    border: 0 none;
+    cursor: default;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: $bgColor !important;
+    @extend %regular;
+}
+
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -icab-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer
+}
+
+::-moz-selection {
+    background: #000;
+    color: $hover
+}
+
+::selection {
+    background: #000;
+    color: $hover
+}
 
 .indent {
     display: block;
@@ -210,34 +346,79 @@ $topHeaderLink: ("normal": #a8a8a8, "hover": $hover);
     text-align: left;
 }
 
-
-body,
-html {
-    background: #fff; 
-    border: 0 none;
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.wrapper {
     width: 100%;
-    height: 100%;
-    color: $defaultTextColor;
-    @extend %regular;
-    cursor: default;
+    @extend %cb;
+    @include hHack(100%);
 }
 
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -o-box-sizing: border-box;
-} 
+.main-trafaret {
+    @extend %cb;
+    @include hHack(1358px);
+    background: url(../img/trafaret.png) no-repeat center top
+}
 
 
-a{color:#ff0000;}
+/*=====footer=====*/
 
-
-
+$footerHaight:140px;
+$footerCellWidth:50%;
+$footerBgColor:#5b050d;
+$footerCopyRightColor:#9a9a9a;
+$footerCopyRightFontSize:14.2px;
+$outPad:0 40px;
+$linkColor:#be1e2d;
+$hoverColor:#fff;
+.main-footer {
+    & {
+        opacity: 0.5
+    }
+    &,
+    &-pad,
+    &-fix {
+        @extend %cb;
+        text-align: left;
+    }
+    &-pad {
+        padding: $outPad;
+    }
+    &-fix {
+        background: $footerBgColor;
+        @extend %gWidth;
+        margin-top: -$footerHaight;
+        z-index: 5
+    }
+    &-fix {
+        &,
+        &-left,
+        &-right {
+            @include hHack($footerHaight);
+            @extend %relat;
+        }
+        &-left {
+            width: $footerCellWidth;
+            float: left;
+            &-txt {
+                color: $footerCopyRightColor;
+                font-size: $footerCopyRightFontSize;
+                letter-spacing: -0.1px;
+                @extend %regular;
+                & a {
+                    color: $linkColor;
+                    @extend %transitionExt;
+                    &:hover {
+                        color: $hoverColor;
+                    }
+                }
+            }
+            &-pad {
+                padding-top: 61px;
+                padding-left: 100px;
+            }
+        }
+        &-right {
+            width: $footerCellWidth;
+            float: left;
+        }
+    }
+}
