@@ -353,12 +353,17 @@ a {
     height: 100%;
     @extend %cb;
     @include hHack(100%);
-		@extend %gWidth;
-		background:$contentBg;
+    @extend %gWidth;
+    background: $contentBg;
 }
 
 .main-trafaret {
     @extend %cb;
+}
+
+.wrapper {
+    background: url(../img/trafaret.png) no-repeat center top;
+    @include hHack(1358px);
 }
 
 
@@ -492,6 +497,82 @@ $secondBrandColor:#ffdd14;
                 }
                 &:hover span {
                     color: $hover
+                }
+            }
+        }
+    }
+}
+
+$headerHeight:83px;
+$headerBackground:#130304;
+$topNavLinkColor:#808080;
+$topNavLinkFontSize:16px;
+$topNavLinkHoverColor:#cb1d2a;
+.main-header {
+    opacity: 0.5;
+    &,
+    &-left,
+    &-right {
+        @include hHack($headerHeight);
+        @extend %relat
+    }
+    & {
+        width: 100%;
+        @extend %cb;
+        @extend %gWidth;
+        background: $headerBackground;
+    }
+    &-left {
+        width: 35%;
+        float: left;
+        text-align: left;
+    }
+    &-right {
+        width: 65%;
+        float: left;
+        text-align: right;
+    }
+    .top-cell-uni {
+        display: inline-block;
+        @include hHack($headerHeight);
+    }
+    .logo-cell {
+        &-pad {
+            @extend %cb;
+            display: inline-block;
+            padding: 11px 29px 10px 40px;
+        }
+    }
+    .logo {
+        display: inline-block;
+        text-decoration: none
+    }
+    .menu-cell-pad {
+        padding-top: 34px
+    }
+    .top-nav {
+        &,
+        &-list {
+            @extend %cb;
+        }
+        &-list,
+        &-list-item {
+            list-style: none;
+            font-size: 0;
+            display: inline-block
+        }
+        &-list-item {
+            &-pad {
+                padding: 0 10px 0 10px
+            }
+            &-link {
+                @extend %transitionExt;
+                @extend %regular;
+                text-decoration: none;
+                color: $topNavLinkColor;
+                font-size: $topNavLinkFontSize;
+                &:hover {
+                    color: $topNavLinkHoverColor;
                 }
             }
         }

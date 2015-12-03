@@ -678,7 +678,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.main-footer .arrow-top, .main-footer .arrow-top .icon-arrow-top, .main-footer-pad .arrow-top, .main-footer-pad .arrow-top .icon-arrow-top, .main-footer-fix .arrow-top, .main-footer-fix .arrow-top .icon-arrow-top, .main-footer-fix-left-txt a, .main-footer-fix-left-pad, .main-footer-fix-right-pad, .main-footer .social-icon-list-item-link, .main-footer .social-icon-list-item-link span {
+.main-footer .arrow-top, .main-footer .arrow-top .icon-arrow-top, .main-footer-pad .arrow-top, .main-footer-pad .arrow-top .icon-arrow-top, .main-footer-fix .arrow-top, .main-footer-fix .arrow-top .icon-arrow-top, .main-footer-fix-left-txt a, .main-footer-fix-left-pad, .main-footer-fix-right-pad, .main-footer .social-icon-list-item-link, .main-footer .social-icon-list-item-link span, .main-header .top-nav-list-item-link {
   -webkit-transition: all 0.3s, ease-in-out;
   -icab-transition: all 0.3s, ease-in-out;
   -khtml-transition: all 0.3s, ease-in-out;
@@ -688,10 +688,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s, ease-in-out; }
 
 body,
-html, .main-footer-fix-left-txt {
+html, .main-footer-fix-left-txt, .main-header .top-nav-list-item-link {
   font-family: ProximaNova-Regular, sans-serif; }
 
-.wrapper:after, .main-footer-fix:after, .main-trafaret:after, .main-footer:after, .main-footer-pad:after {
+.wrapper:after, .main-footer-fix:after, .main-header:after, .main-trafaret:after, .main-footer:after, .main-footer-pad:after, .main-header .logo-cell-pad:after, .main-header .top-nav:after, .main-header .top-nav-list:after {
   clear: both;
   content: "";
   display: block;
@@ -703,18 +703,18 @@ html, .main-footer-fix-left-txt {
   border: 0;
   width: 100%; }
 
-.wrapper, .main-footer-fix {
+.wrapper, .main-footer-fix, .main-header {
   max-width: 1440px;
   min-width: 690px;
   margin: 0 auto;
   clear: both;
   display: block; }
 
-.wrapper, .main-trafaret, .main-footer, .main-footer-pad, .main-footer-fix {
+.wrapper, .main-trafaret, .main-footer, .main-footer-pad, .main-footer-fix, .main-header, .main-header .logo-cell-pad, .main-header .top-nav, .main-header .top-nav-list {
   clear: both;
   display: block; }
 
-.wrapper, .main-trafaret, .main-footer, .main-footer-pad, .main-footer-fix, .main-footer-fix-left, .main-footer-fix-right, .main-footer .social-icon-list-item-link {
+.wrapper, .main-trafaret, .main-footer, .main-footer-pad, .main-footer-fix, .main-header, .main-header .logo-cell-pad, .main-header .top-nav, .main-header .top-nav-list, .main-footer-fix-left, .main-footer-fix-right, .main-footer .social-icon-list-item-link, .main-header-left, .main-header-right {
   position: relative;
   top: 0;
   left: 0; }
@@ -798,6 +798,12 @@ a {
   height: 100%;
   background: #be1e2d; }
 
+.wrapper {
+  background: url(../img/trafaret.png) no-repeat center top;
+  min-height: 1358px;
+  height: auto !important;
+  height: 1358px; }
+
 /*=====footer=====*/
 .main-footer, .main-footer-pad, .main-footer-fix {
   text-align: left; }
@@ -878,5 +884,48 @@ a {
       background: #ffdd14; }
     .main-footer .social-icon-list-item-link:hover span {
       color: #be1e2d; }
+
+.main-header {
+  opacity: 0.5; }
+  .main-header, .main-header-left, .main-header-right {
+    min-height: 83px;
+    height: auto !important;
+    height: 83px; }
+  .main-header {
+    width: 100%;
+    background: #130304; }
+  .main-header-left {
+    width: 35%;
+    float: left;
+    text-align: left; }
+  .main-header-right {
+    width: 65%;
+    float: left;
+    text-align: right; }
+  .main-header .top-cell-uni {
+    display: inline-block;
+    min-height: 83px;
+    height: auto !important;
+    height: 83px; }
+  .main-header .logo-cell-pad {
+    display: inline-block;
+    padding: 11px 29px 10px 40px; }
+  .main-header .logo {
+    display: inline-block;
+    text-decoration: none; }
+  .main-header .menu-cell-pad {
+    padding-top: 34px; }
+  .main-header .top-nav-list, .main-header .top-nav-list-item {
+    list-style: none;
+    font-size: 0;
+    display: inline-block; }
+  .main-header .top-nav-list-item-pad {
+    padding: 0 10px 0 10px; }
+  .main-header .top-nav-list-item-link {
+    text-decoration: none;
+    color: #808080;
+    font-size: 16px; }
+    .main-header .top-nav-list-item-link:hover {
+      color: #cb1d2a; }
 
 /*# sourceMappingURL=style.css.map */
