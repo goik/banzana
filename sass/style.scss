@@ -362,8 +362,8 @@ a {
 }
 
 .wrapper {
-    background: url(../img/trafaret.png) no-repeat center top;
-    @include hHack(1358px);
+    background: url(../img/trafaret2.png) no-repeat center top;
+    @include hHack(1210px);
 }
 
 
@@ -509,7 +509,7 @@ $topNavLinkColor:#808080;
 $topNavLinkFontSize:16px;
 $topNavLinkHoverColor:#cb1d2a;
 .main-header {
-    opacity: 0.5;
+    /*    opacity: 0.5;*/
     &,
     &-left,
     &-right {
@@ -577,4 +577,84 @@ $topNavLinkHoverColor:#cb1d2a;
             }
         }
     }
+    .main-header-right-pad {
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .user-tool-list {
+        & {
+            padding-top: 16px;
+            padding-right: 30px
+        }
+        &,
+        &-item {
+            list-style: none;
+            font-size: 0;
+        }
+        &-item.current {
+            a {
+                background: #be1e2d;
+                color: #ffdd14;
+                @extend %semibold;
+            }
+        }
+        &-item {
+            &,
+            &-link {
+                display: inline-block;
+            }
+            &-link {
+                text-decoration: none;
+                font-size: $topNavLinkFontSize;
+                color: $topNavLinkColor;
+                @extend %regular;
+                @extend %transitionExt;
+                @include borderRadius(4px);
+                padding: 8px 11px 8px 12px;
+                &:hover {
+                    color: $topNavLinkHoverColor;
+                }
+            }
+        }
+        &-item-pad {
+            @extend %cb;
+            padding-left: 14px;
+        }
+    }
+    .user-profile-box {
+        &:hover .user-profile-name {
+            color: #fff
+        }
+        display: inline-block;
+        text-align: left;
+        @extend %cb;
+        /*        width: 174px;*/
+        /*background: #be1e2d;*/
+        height: 73px;
+        @include borderRadius(4px 4px 0 0);
+        .user-profile-name {
+            display: inline-block;
+            color: #808080;
+            font-size: 16px;
+            padding: 12px 29px 23px 62px;
+            line-height: 19px;
+            @extend %cb;
+            @extend %transitionExt;
+            .avatar-cell {
+                display: block;
+                width: 43px;
+                height: 43px;
+                @include borderRadius(50%);
+                background: url(../img/avatar.svg) no-repeat center bottom #c4c4c4;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                overflow: hidden;
+                @include backgroundSize(24px, 32px)
+            }
+        }
+    }
 }
+
+
+
