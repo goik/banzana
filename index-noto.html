@@ -1,0 +1,827 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<title>BLOT</title>
+
+	<style type="text/css">
+
+
+@font-face {
+  font-family: 'Noto Sans Armenian';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Armenian';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansarmenian/v3/NotoSansArmenian-Bold.ttf) format('truetype');
+}
+
+
+		::-moz-selection{background:#880000;color:#fff}
+		::selection{background:#880000;color:#fff}
+		.ReadMsgBody,.ExternalClass,html,body{font-size:0;width:100%;height:100%;background-color:#ffffff;margin:0;padding:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none;font-family:'Noto Sans Armenian'}
+		#outlook a{padding:0;margin:0;outline:none}
+		:focus{border:0;outline:none}
+		::-moz-focus-inner{border:0;outline:none}
+		table{border-spacing:0px!important;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0;margin:0;font-size:0;border:0;border-left:none!important;border-right:none!important;empty-cells:hide!important}
+		a img,img{display:block!important;outline:none;text-decoration:none;border:0;margin:0;padding:0;border-left:none!important;border-right:none!important;empty-cells:hide!important;border-spacing:0px!important}
+		p{margin:0;margin-left:0}
+		img{line-height:100%}
+		table,tr,td,tbody{border-collapse:collapse;border-spacing:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:0;margin:0;font-size:0;border:0;margin-left:0;padding-left:0;border-right:solid #fff 0px!important;mso-outline-level:0!important}
+		.yshortcuts a{border-bottom:none!important}
+		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div,a,br,strong br,b br,em br,i br,h1,h2,h3,h4,h5,h6{-webkit-font-smoothing:antialiased}
+		h1,h2,h3,h4{padding:0;margin:0;font-weight:400}
+		a,span a{text-decoration:none;outline:none;border:0}
+		.yshortcuts,.yshortcuts a,.yshortcuts a:link,.yshortcuts a:visited,.yshortcuts a:h,.yshortcuts a span{color:#ffffff;text-decoration:none!important;border-bottom:none!important;background:none!important}
+		h1 a:active,h2 a:active,h3 a:active,h4 a:active,h5 a:active,h6 a:active,h1 a:visited,h2 a:visited,h3 a:visited,h4 a:visited,h5 a:visited,h6 a:visited,a:link,a:visited,a:hover,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,h1,h2,h3,h4,h5,h6{color:#677178;font-family:'Noto Sans Armenian'}
+
+		@media only screen and (max-device-width:480px){
+		a[href^=tel],a[href^=sms]{color:#ffffff;text-decoration:none;cursor:default}
+		.mobile_link a[href^=tel],.mobile_link a[href^=sms]{color:#ffffff;text-decoration:default;pointer-events:auto;cursor:default}
+		}
+
+		@media only screen and (min-device-width:768px) and (max-device-width:1024px){
+		a[href^=tel],a[href^=sms]{color:#ffffff;text-decoration:none;cursor:default}
+		.mobile_link a[href^=tel],.mobile_link a[href^=sms]{color:#ffffff;text-decoration:default;pointer-events:auto;cursor:default}
+		}
+
+		@media only screen and (max-width:900px){
+			html,body,.ReadMsgBody,.ExternalClass{width:auto!important}
+			body[yahoo] .main-carcass{width:90%!important}
+			.part-wide-img{width:100%;height:auto!important}
+			.wide-img{width:100%;height:auto!important}
+			img[class=part-wide-img]{width:100%;height:auto!important}
+			img[class=wide-img]{width:100%;height:auto!important}
+		}
+
+		@media only screen and (max-width:550px){
+			table[class=part]{width:100%;float:none;text-align:center}
+			td[class=td-min-height]{height:10px}
+		}
+
+		@media only screen and (max-width:400px){
+			.soc-cell{width:80%}
+			.soc-cell table{float:none!important}
+		}
+</style>
+</head>
+<body bgcolor="#ffffff" yahoo="fix">
+
+	<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#ffffff" class="body-table">
+		<tbody>
+			<tr>
+				<td valign="top" align="center" width="100%">
+
+
+
+					<table cellspacing="0" cellpadding="0" border="0" align="center" class="main-carcass" width="800">
+						<tbody>
+							<tr>
+								<td valign="top" align="center">
+
+									<!--block1-->
+									<a href="#" target="_blank" mc:edit="block-1-img-link">
+										<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/screen-1.jpg" height="391" width="800" alt="" class="wide-img" border="0"/>
+									</a>
+									<!--/block1-->
+
+									<!--block1 descr-->
+									<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+										<tbody>
+											<tr>
+												<td valign="top" align="center" height="22"></td>
+											</tr>
+											<tr>
+												<td mc:edit="block-1-btn" valign="top" align="center">
+													<a href="#" target="_blank" style="color:#555555;font-size:16px;text-decoration:none;font-family:'Noto Sans Armenian';font-weight:700">Բազար Բլոտ</a>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" align="center" height="6"></td>
+											</tr>
+											<tr>
+												<td valign="top" align="center">
+
+													<table cellspacing="0" cellpadding="0" border="0" align="center" width="80%">
+														<tbody>
+															<tr>
+																<td valign="top" align="center">
+																	<div mc:edit="block-1-descr" style="color:#898989;text-decoration:none;font-size:14px;line-height:26px;letter-spacing:0.1px;font-family:'Noto Sans Armenian' ">
+																		Հարգելի խաղացողներ: Վերջապես հասանելի է դարձել սիրված Բազար Բլոտ խաղի նոր
+																		տարբերակը: Այս տարբերակում լուծված են բազմաթիվ խնդիրներ և մեր թիմը միշտ
+																		պատրաստ է լսել ձեր կարծիքները և առաջարկները:
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" align="center" height="34"></td>
+											</tr>
+											<tr>
+												<td valign="top" align="center">
+
+													<!--btn-->
+													<table cellspacing="0" cellpadding="0" border="0" align="center" width="190" height="46" bgcolor="#ea252a" style="-o-border-radius:4px;-khtml-border-radius:4px;-icab-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-ms-border-radius:4px;border-radius:4px">
+														<tbody>
+															<tr>
+																<td valign="top" align="center" height="11"></td>
+															</tr>
+															<tr>
+																<td valign="top" align="center" mc:edit="block-1-link">
+																	<a href="#" target="_blank" border="0" style="text-decoration:none;color:#ffffff;font-family:'Noto Sans Armenian';font-size:16px;display:block">
+																		Խաղալ հենց հիմա
+																	</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!--/btn-->
+
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" align="center" height="24"></td>
+											</tr>
+											<tr>
+												<td valign="top" align="center">
+
+													<table cellspacing="0" cellpadding="0" border="0" align="center" class="soc-cell">
+														<tbody>
+															<tr>
+																<td valign="top" align="center">
+
+																	<!--btns-->
+																	<table cellspacing="0" cellpadding="0" border="0" align="left">
+																		<tbody>
+																			<tr>
+																				<td valign="top" align="center" height="55">
+																					<a href="#" target="_blank" mc:edit="block-1-social-fb">
+																						<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/soc-fb.png" height="42" width="42" alt="" class="soc-icon" />
+																					</a>
+																				</td>
+																				<td valign="top" align="center" width="10"></td>
+																				<td valign="top" align="center" mc:edit="block-1-social-od">
+																					<a href="#" target="_blank">
+																						<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/soc-od.png" height="42" width="42" alt="" class="soc-icon" />
+																					</a>
+																				</td>
+																				<td valign="top" align="center" width="10"></td>
+																				<td valign="top" align="center">
+																					<a href="#" target="_blank" mc:edit="block-1-social-vk">
+																						<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/soc-vk.png" height="42" width="42" alt="" class="soc-icon" />
+																					</a>
+																				</td>
+																				<td valign="top" align="center" width="10"></td>
+																				<td valign="top" align="center" mc:edit="block-1-social-mail">
+																					<a href="#" target="_blank">
+																						<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/soc-mail.png" height="42" width="42" alt="" class="soc-icon" />
+																					</a>
+																				</td>
+																				<td valign="top" align="center" width="10"></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<!--/btns-->
+
+																	<!--play-->
+																	<table cellspacing="0" cellpadding="0" border="0" align="left">
+																		<tbody>
+																			<tr>
+																				<td valign="top" align="center" mc:edit="block-1-google-play">
+																					<a href="#" target="_blank">
+																						<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/google-play.png" width="128" height="42" alt=""  />
+																					</a>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<!--/play-->
+
+																</td>
+															</tr>
+														</tbody>
+													</table>
+
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!--/block1 descr-->
+
+
+									<!--spacer-->
+									<table cellspacing="0" cellpadding="0" border="0" align="center" class="other-block" width="100%"><tbody><tr><td valign="top" align="center" height="11"></td></tr></tbody></table>
+									<!--/spacer-->
+
+									<!-- ===========other-block=========== -->
+									<table cellspacing="0" cellpadding="0" border="0" align="center" class="other-block" width="100%" bgcolor="#ececec">
+										<tbody>
+											<tr>
+												<td valign="top" align="center" width="29"></td>
+												<td valign="top" align="center">
+													<!--spacer-->
+													<table cellspacing="0" cellpadding="0" border="0" align="center" class="other-block" width="100%"><tbody><tr><td valign="top" align="center" height="29"></td></tr></tbody></table>
+													<!--/spacer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--other-block1-->
+<a href="#" target="_blank" mc:edit="other-block1-img-link">
+	<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/screen-2.jpg" width="740" height="370" alt="" class="part-wide-img" border="0"/>
+</a>
+<!--/other-block1-->
+
+<!--details-->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+	<tbody>
+		<tr>
+			<td valign="top" align="center">
+
+				<!-- other-block1-descr -->
+				<table cellspacing="0" cellpadding="0" border="0" align="left" width="50%" class="part">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" height="19"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" mc:edit="other-block1-title">
+								<a href="#" style="color:#3b3b3b;font-size:16px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:700" target="_blank">
+									Նոր տեսակի խաղեր
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" height="8"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" mc:edit="other-block1-descr">
+								<div style="color:#7f8c8d;font-size:13px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:400;line-height:22px;letter-spacing:0.5px">
+									Հայտնի է, որ ընթերցողը, կարդալով հասկանալի տեքստ, չի կարողանա կենտրոնանալ տեքստի
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- /other-block1-descr -->
+
+				<!--btn-cell-->
+				<table cellspacing="0" cellpadding="0" border="0" align="right" width="50%" class="part">
+					<tbody>
+						<tr>
+							<td valign="top" align="right" height="48" class="td-min-height"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="right">
+
+								<!--btn-->
+								<table cellspacing="0" cellpadding="0" border="0" align="right" width="144" height="35" bgcolor="#ba2027" style="-o-border-radius:4px;-khtml-border-radius:4px;-icab-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-ms-border-radius:4px;border-radius:4px">
+									<tbody>
+										<tr><td valign="top" align="right" height="9"></td></tr>
+										<tr>
+											<td valign="top" align="center" mc:edit="other-block1-more-details">
+												<a href="#" style="color:#ffffff;font-size:13px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:400" target="_blank">
+													Միացիր հենց հիմա
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!--/btn-->
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--/btn-cell-->
+
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!--/details-->
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" height="27" width="100%"><tbody> <tr> <td valign="top" align="center"></td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+<!--other-block1-->
+<a href="#" target="_blank" mc:edit="other-block2-img-link">
+	<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/screen-3.jpg" width="740" height="370" alt="" class="part-wide-img" border="0"/>
+</a>
+<!--/other-block1-->
+
+<!--details-->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+	<tbody>
+		<tr>
+			<td valign="top" align="center">
+
+				<!-- other-block1-descr -->
+				<table cellspacing="0" cellpadding="0" border="0" align="left" width="50%" class="part">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" height="19"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" mc:edit="other-block2-title">
+								<a href="#" style="color:#3b3b3b;font-size:16px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:700" target="_blank">
+									Ամենօրյա անվճար չիպեր 
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" height="8"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" mc:edit="other-block2-descr">
+								<div style="color:#7f8c8d;font-size:13px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:400;line-height:22px;letter-spacing:0.5px">
+									Հայտնի է, որ ընթերցողը, կարդալով հասկանալի տեքստ, չի կարողանա կենտրոնանալ տեքստի
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- /other-block1-descr -->
+
+				<!--btn-cell-->
+				<table cellspacing="0" cellpadding="0" border="0" align="right" width="50%" class="part">
+					<tbody>
+						<tr>
+							<td valign="top" align="right" height="48" class="td-min-height"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="right">
+
+								<!--btn-->
+								<table cellspacing="0" cellpadding="0" border="0" align="right" width="144" height="35" bgcolor="#ba2027" style="-o-border-radius:4px;-khtml-border-radius:4px;-icab-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-ms-border-radius:4px;border-radius:4px">
+									<tbody>
+										<tr><td valign="top" align="right" height="9"></td></tr>
+										<tr>
+											<td valign="top" align="center" mc:edit="other-block2-more-details">
+												<a href="#" style="color:#ffffff;font-size:13px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:400" target="_blank">
+													Միացիր հենց հիմա
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!--/btn-->
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--/btn-cell-->
+
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!--/details-->
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" height="27" width="100%"><tbody> <tr> <td valign="top" align="center"></td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--other-block1-->
+<a href="#" target="_blank" mc:edit="other-block3-img-link">
+	<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/screen-4.jpg" width="740" height="370" alt="" class="part-wide-img" border="0"/>
+</a>
+<!--/other-block1-->
+
+<!--details-->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+	<tbody>
+		<tr>
+			<td valign="top" align="center">
+
+				<!-- other-block1-descr -->
+				<table cellspacing="0" cellpadding="0" border="0" align="left" width="50%" class="part">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" height="19"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" mc:edit="other-block3-title">
+								<a href="#" style="color:#3b3b3b;font-size:16px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:700" target="_blank">
+									Բոնուսային խաղեր
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" height="8"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" mc:edit="other-block3-descr">
+								<div style="color:#7f8c8d;font-size:13px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:400;line-height:22px;letter-spacing:0.5px">
+									Հայտնի , որ , կարդալով հասկանալի , չի կարողանա կենտրոնանալ տեքստի
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- /other-block1-descr -->
+
+				<!--btn-cell-->
+				<table cellspacing="0" cellpadding="0" border="0" align="right" width="50%" class="part">
+					<tbody>
+						<tr>
+							<td valign="top" align="right" height="48" class="td-min-height"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="right">
+
+								<!--btn-->
+								<table cellspacing="0" cellpadding="0" border="0" align="right" width="144" height="35" bgcolor="#ba2027" style="-o-border-radius:4px;-khtml-border-radius:4px;-icab-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-ms-border-radius:4px;border-radius:4px">
+									<tbody>
+										<tr><td valign="top" align="right" height="9"></td></tr>
+										<tr>
+											<td valign="top" align="center" mc:edit="other-block3-more-details">
+												<a href="#" style="color:#ffffff;font-size:13px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:400" target="_blank">
+													Միացիր հենց հիմա
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!--/btn-->
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--/btn-cell-->
+
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!--/details-->
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" height="27" width="100%"><tbody> <tr> <td valign="top" align="center"></td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--other-block1-->
+<a href="#" target="_blank" mc:edit="other-block4-img-link">
+	<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/screen-5.jpg" width="740" height="370" alt="" class="part-wide-img" border="0"/>
+</a>
+<!--/other-block1-->
+
+<!--details-->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+	<tbody>
+		<tr>
+			<td valign="top" align="center">
+
+				<!-- other-block1-descr -->
+				<table cellspacing="0" cellpadding="0" border="0" align="left" width="50%" class="part">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" height="19"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" mc:edit="other-block4-title">
+								<a href="#" style="color:#3b3b3b;font-size:16px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:700" target="_blank">
+									Հակառակորդի մասին լիարժեք տեղեկություն
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" height="8"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" mc:edit="other-block4-descr">
+								<div style="color:#7f8c8d;font-size:13px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:400;line-height:22px;letter-spacing:0.5px">
+									Հայտնի , որ , կարդալով հասկանալի , չի կարողանա կենտրոնանալ տեքստի
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- /other-block1-descr -->
+
+				<!--btn-cell-->
+				<table cellspacing="0" cellpadding="0" border="0" align="right" width="50%" class="part">
+					<tbody>
+						<tr>
+							<td valign="top" align="right" height="48" class="td-min-height"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="right">
+
+								<!--btn-->
+								<table cellspacing="0" cellpadding="0" border="0" align="right" width="144" height="35" bgcolor="#ba2027" style="-o-border-radius:4px;-khtml-border-radius:4px;-icab-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-ms-border-radius:4px;border-radius:4px">
+									<tbody>
+										<tr><td valign="top" align="right" height="9"></td></tr>
+										<tr>
+											<td valign="top" align="center" mc:edit="other-block4-more-details">
+												<a href="#" style="color:#ffffff;font-size:13px;font-family:'Noto Sans Armenian';text-decoration:none;font-weight:400" target="_blank">
+													Միացիր հենց հիմա
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!--/btn-->
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--/btn-cell-->
+
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!--/details-->
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" height="27" width="100%"><tbody> <tr> <td valign="top" align="center"></td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+													<!--spacer-->
+													<table cellspacing="0" cellpadding="0" border="0" align="center" class="other-block" width="100%"><tbody><tr><td valign="top" align="center" height="29"></td></tr></tbody></table>
+													<!--/spacer-->
+												</td>
+												<td valign="top" align="center" width="29"></td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- =========== /other-block=========== -->
+
+
+
+
+									<!--block1-->
+									<a href="#" target="_blank" mc:edit="block-last-img-link">
+										<img src="https://dl.dropboxusercontent.com/u/98882293/blot-newsletter/img/screen-6.jpg" height="391" width="800" alt="" class="wide-img" border="0"/>
+									</a>
+									<!--/block1-->
+
+									<!--block1 descr-->
+									<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+										<tbody>
+											<tr>
+												<td valign="top" align="center" height="22"></td>
+											</tr>
+											<tr>
+												<td mc:edit="block-last-btn" valign="top" align="center">
+													<a href="#" target="_blank" style="color:#555555;font-size:16px;text-decoration:none;font-family:'Noto Sans Armenian';font-weight:700">
+														Բջջային տարբերակ
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" align="center" height="6"></td>
+											</tr>
+											<tr>
+												<td valign="top" align="center">
+
+													<table cellspacing="0" cellpadding="0" border="0" align="center" width="80%">
+														<tbody>
+															<tr>
+																<td valign="top" align="center">
+																	<div mc:edit="block-last-descr" style="color:#898989;text-decoration:none;font-size:14px;line-height:26px;letter-spacing:0.1px;font-family:'Noto Sans Armenian' ">
+																		Հարգելի խաղացողներ: Վերջապես հասանելի է դարձել 
+																		սիրված Բազար Բլոտ խաղի նոր տարբերակը: Այս տարբերակում 
+																		լուծված են բազմաթիվ խնդիրներ և մեր թիմը միշտ պատրաստ 
+																		է լսել ձեր կարծիքները և առաջարկները:
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" align="center" height="34"></td>
+											</tr>
+											<tr>
+												<td valign="top" align="center">
+
+													<!--btn-->
+													<table cellspacing="0" cellpadding="0" border="0" align="center" width="190" height="46" bgcolor="#ea252a" style="-o-border-radius:4px;-khtml-border-radius:4px;-icab-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-ms-border-radius:4px;border-radius:4px">
+														<tbody>
+															<tr>
+																<td valign="top" align="center" height="11"></td>
+															</tr>
+															<tr>
+																<td valign="top" align="center" mc:edit="block-last-link">
+																	<a href="#" target="_blank" border="0" style="text-decoration:none;color:#ffffff;font-family:'Noto Sans Armenian';font-size:16px;display:block">
+																		Խաղալ հենց հիմա
+																	</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!--/btn-->
+
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" align="center" height="24"></td>
+											</tr>
+										</tbody>
+									</table>
+									<!--/block1 descr-->
+
+									<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%"><tbody><tr><td valign="top" align="center" height="23" style="font-size:0">&nbsp;</td></tr></tbody></table>
+
+									<!--footer-->
+									<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#ececec">
+										<tbody>
+											<tr>
+												<td valign="top" align="center" height="25"></td>
+											</tr>
+											<tr>
+												<td valign="top" align="center" mc:edit="footer-descr">
+
+													<!--footer-txt-->
+													<table cellspacing="0" cellpadding="0" border="0" align="center" width="95%">
+														<tbody>
+															<tr>
+																<td valign="top" align="center">
+
+																	<div style="color:#555555;font-size:14px;line-height:26px;font-family:arial">
+																		blotclub.am website and Bazar Blot applications are properties of FUSION Labs LLC. <br />
+																		All Rights Reserved.<br />
+																		Support email: <a href="mailto:info@blotclub.am" mc:edit="footer-mail" style="color:#555555;text-decoration:none;font-size:14px;font-family:arial" target="_blank">info@blotclub.am</a>
+																	</div>
+
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!--/footer-txt-->
+
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" align="center" height="20"></td>
+											</tr>
+										</tbody>
+									</table>
+									<!--/footer-->
+
+									<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%"><tbody><tr><td valign="top" align="center" height="50" style="font-size:0">&nbsp;</td></tr></tbody></table>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
