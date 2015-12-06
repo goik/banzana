@@ -654,7 +654,14 @@ $topNavLinkHoverColor:#cb1d2a;
             }
         }
     }
+    .user-profile-drop-down {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 10px;
+        background:red;
+    }
 }
-
-
-
